@@ -1,5 +1,5 @@
 # Pull base image.
-FROM debian:unstable
+FROM debian:buster
 MAINTAINER Thibault Payet "mailoo.org"
 
 # Install.
@@ -27,3 +27,4 @@ RUN apt-get install -q -y libgl1-mesa-dri
 RUN apt-get install -q -y libegl1-mesa-dev
 RUN apt-get install -q -y libgles2-mesa-dev
 RUN apt-get install -q -y libbullet-dev
+RUN apt-get install -q -y gcovr
