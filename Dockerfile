@@ -28,3 +28,16 @@ RUN apt-get install -q -y libegl1-mesa-dev
 RUN apt-get install -q -y libgles2-mesa-dev
 RUN apt-get install -q -y libbullet-dev
 RUN apt-get install -q -y gcovr
+
+# hpx require
+RUN apt-get install -q -y libboost-all-dev
+RUN apt-get install -q -y hwloc
+RUN apt-get install -q -y libhwloc-dev
+
+RUN git clone https://github.com/STEllAR-GROUP/hpx && \
+cd hpx && git checkout 1.3.0 && cd .. && \
+mkdir build-hpx && cd build-hpx && \
+cmake ../hpx -GNinja -DHPX_WITH_MALLOC=system && \
+ninja && \
+ninja install && \
+cd ..
