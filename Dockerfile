@@ -28,6 +28,7 @@ RUN apt-get install -q -y libegl1-mesa-dev
 RUN apt-get install -q -y libgles2-mesa-dev
 RUN apt-get install -q -y libbullet-dev
 RUN apt-get install -q -y gcovr
+RUN apt-get install -q -y libepoxy-dev
 
 # hpx require
 RUN apt-get install -q -y libboost-all-dev
