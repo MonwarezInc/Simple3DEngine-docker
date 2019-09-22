@@ -2,6 +2,8 @@
 FROM debian:buster
 MAINTAINER Thibault Payet "mailoo.org"
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Install.
 RUN apt-get update -q -y
 
