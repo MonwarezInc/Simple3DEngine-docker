@@ -12,7 +12,6 @@ RUN apt-get install -qq -y cmake
 RUN apt-get install -q -y git
 RUN apt-get install -qq -y ninja-build
 RUN apt-get install -qq -y build-essential
-RUN apt-get install -qq -y libglew-dev
 RUN apt-get install -qq -y libglm-dev
 RUN apt-get install -qq -y clang
 RUN apt-get install -qq -y meson
