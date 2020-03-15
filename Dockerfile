@@ -1,5 +1,5 @@
 # Pull base image.
-FROM debian:buster
+FROM ubuntu:20.04
 MAINTAINER Thibault Payet "mailoo.org"
 
 ENV DEBIAN_FRONTEND=noninteractive
